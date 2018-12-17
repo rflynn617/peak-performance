@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Allerta Stencil", sans-serif;
+}
+/* free shipping */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #444444;
+  color: #fff;
+}
+
+.wrapper p {
+  margin: 0;
+}
+/* nav bar */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #25a9e0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: #757575;
+}
+
+.dropdown-item {
+  background: #fff;
+  color: #25a9e0;
+  border-bottom: 1px solid #444444;
+  transition: all 0.5s ease;
+}
+
+.dropdown-item:hover {
+  background: #757575;
+  color: #fff;
+}
+/* end of nav bar */
+
+/* cart */
+
+.cart-info__icon {
+  font-size: 1rem;
+  color: #25a9e0;
+  cursor: pointer;
+}
+.cart-info {
+  border: 0.1rem solid #25a9e0;
+  color: #25a9e0;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: #757575;
+  border-color: #757575;
+  color: #fff;
+}
+.cart-info:hover .cart-info__icon {
+  color: #fff;
+}
+
+.nav-info {
+  color: #25a9e0;
+  font-size: 1rem;
+}
+
+.max-height {
+  min-height: calc(100vh - 121px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner-bcg-2.jpg) center/cover fixed no-repeat;
+  position: relative;
+}
+
+.peak {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #25a9e0;
+}
+
+.performance {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #25a9e0;
+}
+.banner-title {
+  letter-spacing: 1rem;
+}
+.banner {
+  margin-top: -8rem;
+}
+
+.peak,
+.performance {
+  animation: fromTop;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromTop {
+  0% {
+    /* font-size: 1rem; */
+    opacity: 0.1;
+  }
+  25% {
+    /* font-size: 3rem; */
+    opacity: 0.3;
+  }
+  50% {
+    /* font-size: 4rem; */
+    opacity: 0.5;
+  }
+  75% {
+    /* font-size: 5rem; */
+    opacity: 0.7;
+  }
+  100% {
+    /* font-size: 6rem; */
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .peak,
+  .performance {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.banner-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  background: #25a9e0;
+  color: #fff;
+  border: 0.2rem solid #25a9e0;
+  transition: all 0.5s ease;
+}
+
+.banner-link:hover {
+  background: #fff;
+  color: #25a9e0;
+}
+
+/* cart */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(247, 247, 247, 0.8);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* cart item */
+.cart-item-remove {
+  color: #25a9e0;
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.2);
+  color: #444444;
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-blue {
+  color: #25a9e0 !important;
+  border-color: #25a9e0 !important;
+}
+.btn-black {
+  color: #444444 !important;
+  border-color: #444444 !important;
+}
+.btn-black:hover {
+  color: #25a9e0 !important;
+  background: #444444 !important;
+}
+.btn-blue:hover {
+  background: #25a9e0 !important;
+  color: #444444 !important;
+}
+/* end of cart buttons */
+
+/* header link */
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 48.5%;
+  color: #fff;
+  background: #25a9e0;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  animation: floatingDownArrows;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: #25a9e0;
+  background: #fff;
+}
+
+@keyframes floatingDownArrows {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+/* end of header link */
+
+/* insider section */
+
+.blue-row {
+  text-align: center;
+  color: #fff;
+  padding: 41px 0 38px;
+  background-color: #25a9e0;
+}
+
+.blue-row h4 {
+  color: #fff;
+  margin: 0;
+  padding-bottom: 4rem;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.blue-row p {
+  color: #fff;
+  font-size: 14px;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 28px;
+  max-width: 100%;
+  font-weight: 300;
+  letter-spacing: 0.88px;
+  line-height: 20px;
+}
+
+.blue-row form {
+  width: 546px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.blue-row form input {
+  width: calc(100% - 150px);
+  color: #fff !important;
+  font-size: 14px;
+  background: none !important;
+  border: 1px solid transparent !important;
+  border-bottom-color: #fff !important;
+  font-weight: 300;
+  letter-spacing: 0.88px;
+  line-height: 20px;
+  float: left;
+}
+
+.blue-row form button {
+  float: right;
+  width: 130px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #fff !important;
+  line-height: 34px;
+  color: #fff;
+  opacity: 1 !important;
+  padding: 0;
+  font-size: 12px;
+  background: #25a9e0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.blue-row form button:hover {
+  color: #25a9e0;
+  background: #fff;
+}
+
+/* hot items section */
+#hot-items {
+  border-bottom: 1px solid #25a9e0;
+}
+.hot-items-title {
+  color: #25a9e0;
+  font-size: 4rem;
+}
+
+.item-container {
+  position: relative;
+  /* for the link */
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #25a9e0;
+  font-size: 2rem;
+  border: 2px solid #25a9e0;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  border: 2px solid #25a9e0;
+  background: #fff;
+  color: #25a9e0;
+}
+
+.item-container:hover {
+  outline: 10px solid #25a9e0;
+  outline-offset: 0.8rem;
+}
+
+/* end of hot items section */
+
+/* store items */
+.store {
+  /* background: # */
+}
+.store-title {
+  color: #25a9e0;
+  font-size: 4rem;
+}
+.btn-store {
+  color: #f7f7f7;
+  background: #25a9e0;
+  transition: all 0.5s linear;
+}
+.btn-store:hover {
+  color: #25a9e0;
+  background: #f7f7f7;
+  border: 2px solid #25a9e0;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.card-body {
+  border-top: 1px solid #25a9e0;
+}
+/* .img-container:hover .store-img {
+  transform: scale(1.2);
+} */
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: #25a9e0;
+  color: #f7f7f7;
+  border: 1px solid #25a9e0;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: #25a9e0;
+  background: #f7f7f7;
+}
+.store-item-value {
+  color: #25a9e0;
+}
+/*end of  store items */
+
+/* grid container about section*/
+.grid-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container--medium-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+  .grid-container {
+    max-width: 85vw;
+  }
+}
+
+/* nutritional goals section */
+.nutritional-goals-title {
+  font-size: 4rem;
+  /* color: #444444; */
+  color: #25a9e0;
+  padding: 2rem 0;
+}
+.section-title {
+  padding: 1rem 0.5rem;
+  color: #444444;
+}
+
+.section-title--left {
+  margin-left: 10rem;
+}
+
+.section-title__name {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.section-title__underline {
+  background: #444444;
+  width: 10rem;
+  height: 0.25rem;
+}
+
+.section-title__text {
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #444444;
+}
+
+.nutritional-goals {
+  background: #f7f7f7;
+  width: 100%;
+}
+
+.nutritional-goals-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2rem;
+}
+
+.nutritional-goals__img-item {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nutritional-goals__img-special {
+    order: -1;
+  }
+  .nutritional-goals-container {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* blog posts section */
+.blog-posts .container {
+  max-width: 90%;
+}
+.blog-posts-title {
+  font-size: 4rem;
+  color: #25a9e0;
+}
+.blog-title {
+  color: #444444;
+  font-weight: 600;
+}
+.blog-article {
+  color: #444444;
+  font-weight: 300;
+}
+
+.blog-container img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 350px;
+}
+.center {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 320px;
+  margin: auto;
+  z-index: 10;
+  text-align: center;
+  bottom: 0;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.blog-container a:hover .center {
+  opacity: 1;
+  color: #25a9e0;
+}
+.blog-container a:hover img {
+  opacity: 0.1;
+}
+
+.blog-container a {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-container img {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.blog-container img:hover {
+  opacity: 0.1;
+}
+
+.more-articles-btn {
+  font-size: 1rem;
+  background: #25a9e0;
+  color: #fff;
+  border: 0.2rem solid #25a9e0;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.more-articles-btn:hover {
+  background: #fff;
+  color: #25a9e0;
+}
+/* end of blog posts section */
+
+/* instagram section */
+.instagram-section {
+  background: #f7f7f7;
+}
+.instagram-section a {
+  text-decoration: none;
+}
+.instagram-section-title {
+  color: #25a9e0;
+  font-size: 4rem;
+  transition: all 0.5s ease;
+}
+.instagram-section-title:hover {
+  color: #757575;
+}
+.instagram-section .container {
+  max-width: 90%;
+}
+.instagram-post-container img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid #25a9e0;
+}
+.footer-cr {
+  font-size: 0.75rem;
+}
+.social-icon {
+  color: #25a9e0;
+  transition: all 0.5s ease;
+}
+.social-icon:hover {
+  color: #444444;
+}

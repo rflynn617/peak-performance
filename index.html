@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+      rel="stylesheet"
+    />
+    <title>Peak Performance</title>
+  </head>
+  <body>
+    <!-- free shipping bar -->
+    <div class="topbar">
+      <div class="wrapper">
+        <p class="text-uppercase p-2 align-self-center">
+          Free Shipping on all orders within the U.S.
+        </p>
+      </div>
+    </div>
+    <!-- end of free shipping bar -->
+    <header id="header">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg px-4">
+        <a href="#" class="navbar-brand">
+          <img
+            src="img/peak-performance-logo-1.png"
+            alt="main icon"
+            width="60"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="toggler-icon"> <i class="fas fa-bars"></i> </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="myNavbar"
+        >
+          <ul class="navbar-nav text-uppercase align-items-center mx-auto">
+            <li class="nav-item dropdown px-1">
+              <a
+                href="#products"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >store</a
+              >
+              <div class="dropdown-menu navbar-nav-products">
+                <a href="#protein" class="dropdown-item nav-link-products"
+                  >protein</a
+                >
+                <a href="#preworkout" class="dropdown-item nav-link-products"
+                >pre-workout</a
+                >
+                <a href="#creatine" class="dropdown-item nav-link-products"
+                  >creatine</a
+                >
+              </div>
+            </li>
+            <li class="nav-item active px-1">
+              <a href="#insider" class="nav-link">insider</a>
+            </li>
+            <li class="nav-item active px-1">
+              <a href="#hot-items" class="nav-link">hot items</a>
+            </li>
+
+            <li class="nav-item dropdown px-1 ">
+              <a
+                href="#services"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >services</a
+              >
+              <div class="dropdown-menu navbar-nav-services">
+                <a href="#fat-loss" class="dropdown-item nav-link-services"
+                  >fat loss</a
+                >
+                <a href="#gain-muscle" class="dropdown-item nav-link-services"
+                  >gain muscle</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item active px-1">
+              <a href="#blog-posts" class="nav-link">blog</a>
+            </li>
+
+            <li class="nav-item active px-1">
+              <a href="#social" class="nav-link">social</a>
+            </li>
+          </ul>
+          <div class="nav-info-items d-none d-lg-flex pr-3">
+            <!-- phone info -->
+            <div
+              class="nav-info align-items-center d-flex justify-content-between mx-lg-5"
+            >
+              <span class="info-icon mx-lg-3">
+                <i class="fas fa-phone"></i>
+              </span>
+              <p class="mb-0">123 456 7890</p>
+            </div>
+            <!-- end of phone info -->
+            <!-- cart info -->
+            <div
+              id="cart-info"
+              class="nav-info align-items-center cart-info d-flex"
+            >
+              <span class="cart-info__icon mr-lg-3">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <p class="mb-0 text-capitalize">
+                <span id="item-count">2</span> items - $
+                <span class="item-total"> 45.00 </span>
+              </p>
+            </div>
+            <!-- end of cart info -->
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- banner section -->
+      <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div class="col-10 mx-auto banner text-center">
+            <span>
+              <img
+                class="banner-logo align-self-center"
+                src="img/peak-performance-logo-1.png"
+                alt="logo"
+                width="150"
+              />
+              <h1
+                class="banner-title peak text-center text-uppercase underline"
+              >
+                peak
+              </h1>
+              <h1
+                class="banner-title performance text-center text-uppercase underline mb-4"
+              >
+                performance
+              </h1></span
+            >
+
+            <a
+              href="#store"
+              class="btn banner-link text-uppercase my-2 align-self-center"
+              >shop peak</a
+            >
+          </div>
+          <!-- cart -->
+          <div class="cart" id="cart">
+            <!-- cart item -->
+            <div
+              class="cart-item d-flex justify-content-between text-capitalize my-3"
+            >
+              <img
+                src=""
+                class="img-fluid rounded-circle"
+                id="item-img"
+                alt=""
+              />
+              <div class="item-text">
+                <p id="cart-item-title" class="font-weight-bold mb-0">
+                  cart item
+                </p>
+                <span>$</span>
+                <span id="cart-item-price" class="cart-item-price mb-0"
+                  >25.00</span
+                >
+              </div>
+              <a href="#" id="cart-item-remove" class="cart-item-remove">
+                <i class="fas fa-trash"></i>
+              </a>
+            </div>
+            <!-- end of cart item -->
+            <!-- cart item -->
+            <div
+              class="cart-item d-flex justify-content-between text-capitalize my-3"
+            >
+              <img
+                src=""
+                class="img-fluid rounded-circle"
+                id="item-img"
+                alt=""
+              />
+              <div class="item-text">
+                <p id="cart-item-title" class="font-weight-bold mb-0">
+                  cart item
+                </p>
+                <span>$</span>
+                <span id="cart-item-price" class="cart-item-price mb-0"
+                  >20.00</span
+                >
+              </div>
+              <a href="#" id="cart-item-remove" class="cart-item-remove">
+                <i class="fas fa-trash"></i>
+              </a>
+            </div>
+            <!-- end of cart item -->
+            <!-- cart total -->
+            <div
+              class="cart-total-container d-flex justify-content-around text-capitalize mt-5"
+            >
+              <h5>total</h5>
+              <h5>
+                $
+                <strong id="cart-total" class="font-weight-bold">45.00</strong>
+              </h5>
+            </div>
+            <!-- end of cart total -->
+            <!-- cart buttons -->
+            <div
+              class="cart-buttons-container mt-3 d-flex justify-content-between"
+            >
+              <a href="#" id="clear-cart" class="btn btn-black text-uppercase"
+                >clear cart</a
+              >
+              <a href="#" id="clear-cart" class="btn btn-blue text-uppercase"
+                >checkout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header link -->
+      <a href="#hot-items" class="btn header-link"
+        ><i class="fas fa-angle-double-down"></i
+      ></a>
+      <!-- end of header link -->
+      <!-- end of banner section -->
+    </header>
+    <!-- end of header -->
+    <!-- join insider input section -->
+    <div class="blue-row" id="insider">
+      <div class="container py-5">
+        <h4 class="text-capitalize">
+          get PEAK PERFORMANCE product sales first
+        </h4>
+        <p>
+          Sign up to become an Insider. No frequent spam emails, only new
+          releases and huge sales
+        </p>
+        <form action="#contact_form" id="contact_form" class="contact-form">
+          <div class="input-group contact-form">
+            <input
+              type="email"
+              name="contact[email]"
+              id="Email"
+              class="input-group__field newsletter__input"
+              value=""
+              placeholder="Enter your email"
+              autocorrect="off"
+              autocapitalize="off"
+            />
+            <span class="input-group__btn">
+              <button
+                type="submit"
+                class="button prefix"
+                name="subscribe"
+                id="Subscribe"
+              >
+                Submit
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end of join insider input section -->
+
+    <!-- hot items section -->
+    <section class="hot-items py-5" id="hot-items">
+      <h1 class="hot-items-title text-center text-uppercase">hot items</h1>
+      <div class="container my-5">
+        <div class="row parent-container">
+          <!-- hot item -->
+          <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+              <img
+                src="img/feature-img-6.jpg"
+                class="img-fluid img-thumbnail item-img"
+                alt="hot item"
+              />
+              <a href="#">
+                <h1 class="text-uppercase text-center item-link px-3">
+                  protein
+                </h1>
+              </a>
+            </div>
+          </div>
+          <!-- end of hot item -->
+          <!-- hot item -->
+          <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" id="menu">
+            <div class="item-container">
+              <img
+                src="img/feature-img-7.jpg"
+                class="img-fluid img-thumbnail item-img"
+                alt="hot item"
+              />
+              <a href="#">
+                <h1 class="text-uppercase text-center item-link px-3">
+                  creatine
+                </h1>
+              </a>
+            </div>
+          </div>
+          <!-- end of hot item -->
+          <!-- hot item -->
+          <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+              <img
+                src="img/feature-img-8.jpg"
+                class="img-fluid img-thumbnail item-img"
+                alt="hot item"
+              />
+              <a href="#">
+                <h1 class="text-uppercase text-center item-link px-3">
+                  pre-workout
+                </h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of hot item -->
+
+    <!-- store section -->
+    <section id="store" class="store py-5">
+      <div class="container">
+        <!-- section title -->
+        <div class="row">
+          <div class="col-10 mx-auto col-sm-6 text-center">
+            <h1 class="store-title text-uppercase">supplement store</h1>
+            <div id="my-store-15842266"></div>
+            <!-- <div>
+              <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?15842266&data_platform=code&data_date=2018-12-10"
+                charset="utf-8"></script>
+              <script type="text/javascript"> xProductBrowser("categoriesPerRow=3", "views=grid(20,3) list(60) table(60)", "categoryView=grid", "searchView=list", "id=my-store-15842266");</script>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of section title -->
+        <!-- filter buttons -->
+        <div class="row">
+          <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap pb-4">
+            <a href="#" class="btn btn-store text-uppercase filter-btn m-2" data-filter="all">all</a>
+            <a href="#" class="btn btn-store text-uppercase filter-btn m-2" data-filter="protein">protein</a>
+            <a href="#" class="btn btn-store text-uppercase filter-btn m-2" data-filter="creatine">creatine</a>
+            <a href="#" class="btn btn-store text-uppercase filter-btn m-2" data-filter="preworkout">pre-workout</a>
+            
+          </div>
+        </div>
+        <!-- end of filter buttons -->
+        <!-- search box -->
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text search-box" id="search-icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="item..." id="search-item">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of search box -->
+        <!-- store items -->
+        <div class="row store-items" id="store-items">
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item protein" id="protein" data-item="protein">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/protein-item-1.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> protein item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+         
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item protein" data-item="protein">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/protein-item-2.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> protein item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">30</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item protein" data-item="protein">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/protein-item-3.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> protein item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item protein" data-item="protein">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/protein-item-4.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> protein item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">35</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item preworkout" id="preworkout" data-item="preworkout">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/preworkout-item-1.jpeg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> pre-workout item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">30</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item preworkout" data-item="preworkout">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/preworkout-item-2.jpeg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> pre-workout item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">35</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item preworkout" data-item="preworkout">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/preworkout-item-3.jpeg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> pre-workout item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">35</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item preworkout" data-item="preworkout">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/preworkout-item-4.jpeg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> pre-workout item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">30</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item creatine" id="creatine" data-item="creatine">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/creatine-item-1.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> creatine item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item creatine" data-item="creatine">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/creatine-item-2.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> creatine item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">20</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item creatine" data-item="creatine">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/creatine-item-3.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> creatine item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item creatine" data-item="creatine">
+            <div class="card single-item">
+              <div class="img-container">
+                <img src="img/creatine-item-4.jpg" class="card-img-top store-img" alt="">
+                <span class="store-item-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                  <h5 id="store-item-name"> creatine item</h5>
+                  <h5 id="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+        </div>
+        <!-- end of store items -->
+      </div>
+    </section>
+    <!-- end of store section -->
+
+    <!-- nutrition goals section -->
+    <section
+      class="nutritional-goals section-padding mx-auto py-3"
+      id="nutritional-goals"
+    >
+      <h1 class="nutritional-goals-title text-center text-uppercase">
+        nutritional goals
+      </h1>
+      <div class="grid-container grid-container--medium-2">
+        <!-- nutrition goals container -->
+        <article class="nutritional-goals-container">
+          <!-- fat loss -->
+          <div class="section-title" id="fat-loss">
+            <h1 class="section-title__name">fat loss</h1>
+            <div class="section-title__underline"></div>
+            <p class="section-title__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quia
+              et, esse fugiat aspernatur veritatis quas, accusantium
+              necessitatibus voluptate natus unde assumenda laborum similique
+              saepe cupiditate aut illum. A, quia alias? Quam ullam doloremque
+              porro iusto architecto temporibus maiores vero aut commodi
+              repudiandae deleniti, necessitatibus corporis ducimus placeat esse
+              magnam fugit. Adipisci vitae eaque accusantium aperiam, aliquam
+              placeat numquam magnam necessitatibus ut consequatur eligendi quia
+              voluptatem mollitia rerum architecto sint? Quia amet quasi
+              expedita nesciunt.
+            </p>
+          </div>
+          <!-- fat loss img -->
+          <div class="nutritional-goals__img">
+            <img
+              src="img/lean-muscle-gain-img-1.jpg"
+              class="nutritional-goals__img-item"
+              alt="nutritional-goals-img"
+            />
+          </div>
+        </article>
+        <!-- end of about container -->
+        <!-- nutrition goals container -->
+        <article class="nutritional-goals-container">
+          <!-- lean muscle gain -->
+          <div class="section-title" id="gain-muscle">
+            <h1 class="section-title__name">lean muscle gain</h1>
+            <div class="section-title__underline"></div>
+            <p class="section-title__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, laboriosam tempore animi voluptatibus error at maxime
+              perspiciatis voluptatem voluptate repudiandae numquam omnis, ea
+              corrupti, corporis deserunt? Nisi beatae optio provident,
+              delectus, ipsum quod inventore nulla aliquid sequi rem accusantium
+              laborum quo accusamus ipsa odit eius! Exercitationem, quia. Natus
+              sed iure dicta pariatur quaerat consequuntur, atque eius. Veniam
+              magni eos officiis vel, ex, aliquid deleniti illo recusandae hic
+              quibusdam consequatur minus rem beatae perspiciatis sed quisquam.
+            </p>
+          </div>
+          <!-- lean muscle gain img -->
+          <div class="nutritional-goals__img nutritional-goals__img-special">
+            <img
+              src="img/fat-loss-img-1.jpg"
+              class="nutritional-goals__img-item"
+              alt="nutritional-goals-img"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end of lean muscle gain container -->
+    <!-- end of nutrition goals section -->
+
+    <!-- blog posts section -->
+    <section class="blog-posts py-5" id="blog-posts">
+      <h1 class="blog-posts-title text-uppercase text-center">blog posts</h1>
+      <div class="container my-5">
+        <div class="row parent-container">
+          <!-- single blog post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="blog-container">
+              <a href="#">
+                <img src="img/fitness-motivation-img-3.jpg" alt="blog-post" />
+                <div class="center">
+                  <div class="blog-title">
+                    <h3 class="text-capitalize">workout motivation</h3>
+                    <span class="blog-article">View Article</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end of single post -->
+
+          <!-- single blog post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="blog-container">
+              <a href="#">
+                <img src="img/workout-traveling-img-1.jpg" alt="blog-post" />
+                <div class="center">
+                  <div class="blog-title">
+                    <h3 class="text-capitalize">
+                      workout tips for frequent travelers
+                    </h3>
+                    <span class="blog-article">View Article</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end of single post -->
+
+          <!-- single blog post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="blog-container">
+              <a href="#">
+                <img
+                  src="img/muscle-building-mistakes-img-1.jpg"
+                  alt="blog-post"
+                />
+                <div class="center">
+                  <div class="blog-title">
+                    <h3 class="text-capitalize">muscle building mistakes</h3>
+                    <span class="blog-article">View Article</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end of single post -->
+          <div class="d-flex mx-auto py-5 more-articles text-center">
+            <a href="#">
+              <button class="btn more-articles-btn text-uppercase">
+                more articles
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of blog posts section -->
+
+    <!-- instagram section -->
+    <section class="instagram-section py-5" id="social">
+      <a href="#">
+        <h1 class="instagram-section-title text-center text-uppercase">
+          instagram
+        </h1>
+      </a>
+      <div class="container my-5">
+        <div class="row parent-container">
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-1.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-2.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-3.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-4.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-5.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-6.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-7.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+          <!-- single instagram post -->
+          <div class="col-12 mx-auto col-sm-6 col-lg-3 my-3">
+            <div class="instagram-post-container">
+              <a href="#">
+                <img src="img/instagram-img-8.jpg" alt="instagram image" />
+              </a>
+            </div>
+          </div>
+          <!-- end of single instagram post -->
+        </div>
+      </div>
+    </section>
+    <!-- end of instagram section -->
+    <!-- footer section -->
+    <section class="footer" id="footer">
+      <div class="container-fluid info p-1">
+        <div class="row">
+          <div
+            class="col d-flex justify-content-between align-items-baseline flex-wrap"
+          >
+            <div class="social-icons p-2 ml-5">
+              <a
+                href="https://www.facebook.com/robert.flynn.792"
+                target="_blank"
+                class="social-icon mr-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rflynn617/?hl=en"
+                target="_blank"
+                class="social-icon mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://twitter.com/robertf617km"
+                target="_blank"
+                class="social-icon mr-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon mr-3"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+            <h2 class="footer-cr p-2 text-uppercase mr-5">
+              &copy;peak performance copyright 2018
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of footer section -->
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
